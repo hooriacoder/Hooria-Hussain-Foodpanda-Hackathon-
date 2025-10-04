@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  background-color: #ff0066;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+   text-align: center; 
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffccff;
+}
+
+.logo-top {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo-top img {
+  height: 200px; 
+}
+
+.delivery-card img {
+  width: 100%;
+  height: 200px;       
+  object-fit: cover;   
+  border-radius: 10px;
+}
+
+/* Delivery section style */
+.delivery-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff0f5; /* light pink background */
+}
+
+.delivery-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.delivery-card {
+  background-color: white;
+  border: 2px solid #ff66b2;
+  border-radius: 15px;
+  width: 250px;       /* 👈 size of each image card */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.delivery-card img {
+  width: 100%;
+  height: 200px;      /* 👈 image height */
+  object-fit: cover;  /* 👈 keeps image clean and not stretched */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.delivery-card h3 {
+  color: #ff0066;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.delivery-card p {
+  font-size: 14px;
+  color: #555;
+}
+.delivery-card {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.card-container {
+    display: flex;
+    gap: 20px; /* space between cards */
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    justify-content: center; /* centers the cards */
+    padding: 20px;
+}
+
+.delivery-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 128, 0.2);
+    text-align: center;
+    background-color: white;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;  /* Spread out cards */
+    flex-wrap: wrap;  /* Allows wrapping of cards to next line if needed */
+    gap: 20px;  /* Adds space between the cards */
+    padding: 20px;
+}
+
+.delivery-card {
+    width: 30%;  /* Sets each card to take 30% of the container's width */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+    .delivery-card {
+        width: 45%;  /* Cards take 45% width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .delivery-card {
+        width: 100%;  /* Full width for very small screens */
+    }
+}
+
+
+.home-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff0f5; /* light pink background */
+}
+
+.home-section h1 {
+  color: black;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home-section p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.home-img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ===================== PICKUP PAGE ===================== */
+.pickup-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff0f5;
+}
+
+.pickup-section h2 {
+  color: #ff0066;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.pickup-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pickup-card {
+  background-color: white;
+  border: 2px solid #ff66b2;
+  border-radius: 15px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  text-align: center;
+}
+
+.pickup-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Discount Label */
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff0066;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.pickup-card h3 {
+  color: #ff0066;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.pickup-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===================== PANDAMART PAGE ===================== */
+.pandamart-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f0f8ff; /* light blue background */
+}
+
+.pandamart-section h2 {
+  color: #0077cc;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.pandamart-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pandamart-card {
+  position: relative;
+  border: 2px solid #0077cc;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pandamart-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blue-box {
+  background-color: rgba(0, 119, 204, 0.8);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.blue-box h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+
+
